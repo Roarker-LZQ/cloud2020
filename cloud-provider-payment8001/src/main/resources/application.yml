@@ -12,3 +12,12 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.lzq.entities
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:18081/eureka/    # 指定注册中心的地址
+instance:
+  preferIpAddress: true
