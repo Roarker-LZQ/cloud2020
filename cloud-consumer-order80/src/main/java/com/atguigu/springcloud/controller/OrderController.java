@@ -49,7 +49,7 @@ public class OrderController
     }
 
     /**
-     *
+     * getPayment2方法
      * @param id
      * @return
      */
