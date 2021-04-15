@@ -24,7 +24,7 @@ import java.util.List;
 @Slf4j
 public class OrderController
 {
-    //public static final String PAYMENT_URL = "http://localhost:8001";
+    //   public static final String PAYMENT_URL = "http://localhost:8001";
 
     public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
@@ -81,7 +81,7 @@ public class OrderController
     @GetMapping("/consumer/payment/zipkin")
     public String paymentZipkin()
     {
-        String result = restTemplate.getForObject("http://localhost:8001"+"/payment/zipkin/", String.class);
-        return result;
+        return restTemplate.getForObject("http://localhost:8001"+"/payment/zipkin/", String.class);
+
     }
 }
